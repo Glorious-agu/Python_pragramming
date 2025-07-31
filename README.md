@@ -1,11 +1,11 @@
 # Python_pragramming
-For my python projects at ATU
+#BTECH LEVEL 100 CPS
 
 import random
 
 def get_input(prompt):
     """
-    Prompt the user for input and return their response.
+   # Prompt the user for input and return their response.
 
     Args:
         prompt (str): The question or message to display.
@@ -17,7 +17,7 @@ def get_input(prompt):
 
 def ask_questions():
     """
-    Ask the user a randomized set of personal questions.
+   # Ask the user a randomized set of personal questions.
 
     Returns:
         dict: A dictionary of answers keyed by question identifier.
@@ -43,21 +43,21 @@ def ask_questions():
 
 def display_summary(answers):
     """
-    Display a fun, personalized summary based on the user's input.
+   # Display a fun, personalized summary based on the user's input.
 
     Args:
         answers (dict): Dictionary containing user's responses.
     """
-    print("\n🎉 Here's your personalized summary 🎉\n")
+    print("\n🎉 Here's your personalized summary \n")
     print(f"Hello, {answers['name']}!")
     print(f"You are {answers['age']} years old, love the color {answers['color']},")
     print(f"and enjoy eating {answers['food']}.")
     print(f"Life must be awesome in {answers['city']}!")
-    print(f"You went to {answers['shs']} and support {answers['team']}. ⚽\n")
+    print(f"You went to {answers['shs']} and support {answers['team']}. \n")
 
 def save_to_file(answers, rating):
     """
-    Save the summary and user rating to a text file named after the user.
+   # Save the summary and user rating to a text file named after the user.
 
     Args:
         answers (dict): Dictionary containing user's responses.
@@ -65,7 +65,7 @@ def save_to_file(answers, rating):
     """
     filename = f"{answers['name']}.txt"
     with open(filename, "w") as f:
-        f.write("📝 Personal Summary\n")
+        f.write(" Personal Summary\n")
         f.write(f"Name: {answers['name']}\n")
         f.write(f"Age: {answers['age']}\n")
         f.write(f"Favorite Color: {answers['color']}\n")
@@ -74,11 +74,11 @@ def save_to_file(answers, rating):
         f.write(f"SHS Attended: {answers['shs']}\n")
         f.write(f"Favorite Soccer Team: {answers['team']}\n")
         f.write(f"User Rating: {rating} stars\n")
-    print(f"\n✅ Summary saved to {filename}\n")
+    print(f"\n Summary saved to {filename}\n")
 
 def main():
     """
-    The main loop of the program. Handles asking questions, showing summary,
+   # The main loop of the program. Handles asking questions, showing summary,
     saving to file, and restarting the process based on user input.
     """
     while True:
@@ -101,7 +101,7 @@ def main():
 
         restart = input("Do you want to restart the process? (yes/no): ").lower()
         if restart not in ['yes', 'y']:
-            print("👋 Goodbye! Come back anytime.")
+            print(" Goodbye! Come back anytime.")
             break
 
 if __name__ == "__main__":
